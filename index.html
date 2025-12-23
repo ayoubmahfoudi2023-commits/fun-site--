@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقع ممتع - ayoub mahfoudi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-name">ayoub mahfoudi</div>
+
+<div class="header">
+  <h1>🎮 موقع ممتع 3.0</h1>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</div>
+
+<div class="side-menu" id="menu">
+  <button onclick="home()">🏠 الرئيسية</button>
+  <button onclick="fetchFact()">🧠 معلومة من الإنترنت</button>
+  <button onclick="fun()">🎲 تسلية</button>
+  <button onclick="game()">🎮 خمن الرقم</button>
+  <button onclick="rpsGame()">✊✋✌️ حجر-ورقة-مقص</button>
+  <button onclick="progress()">⭐ مستواك</button>
+  <button onclick="secretGamesPage()">🎁 ألعاب سرية</button>
+  <button onclick="dailySurprise()">🎉 مفاجأة اليوم</button>
+  <button onclick="weeklySurprise()">🎊 مفاجأة الأسبوع</button>
+  <button onclick="leaderboard()">🏆 الترتيب العالمي</button>
+  <button onclick="share()">📤 مشاركة</button>
+  <button onclick="about()">ℹ️ عن الموقع</button>
+</div>
+
+<div class="container" id="content">
+  <h2>مرحبًا 👋</h2>
+  <p>افتح القائمة ☰ واستمتع بالموقع الممتع والمفيد!</p>
+</div>
+
+<audio id="soundPoint" src="assets/sounds/point.mp3"></audio>
+<audio id="soundLevel" src="assets/sounds/level-up.mp3"></audio>
+<audio id="soundError" src="assets/sounds/error.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  min-height:100vh;
+  background:linear-gradient(120deg,#1e1e2f,#f5f7fa);
+  transition:background 2s ease;
+  overflow-x:hidden;
+}
+.bg-name{
+  position:fixed;
+  font-size:60px;
+  color:rgba(255,255,255,0.06);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  user-select:none;
+  z-index:0;
+  text-align:center;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 15px;
+  background:rgba(30,30,47,0.95);
+  color:white;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:2;
+}
+.menu-btn{
+  font-size:26px;
+  cursor:pointer;
+}
+.side-menu{
+  position:fixed;
+  top:0;
+  right:-250px;
+  width:250px;
+  height:100%;
+  background:#111;
+  padding-top:60px;
+  transition:0.5s ease;
+  z-index:3;
+  overflow-y:auto;
+}
+.side-menu button{
+  width:100%;
+  padding:15px;
+  background:none;
+  border:none;
+  color:white;
+  font-size:18px;
+  text-align:right;
+  cursor:pointer;
+  transition:0.3s;
+}
+.side-menu button:hover{
+  background:#f5c542;
+  color:black;
+}
+.container{
+  background:rgba(255,255,255,0.95);
+  width:95%;
+  max-width:400px;
+  margin:100px auto 50px auto;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  position:relative;
+  z-index:1;
+}
+.fact{
+  margin:15px 0;
+  font-size:16px;
+  line-height:1.6;
+}
+.action{
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  margin:5px;
+  font-size:16px;
+  transition:0.3s;
+}
+.action:hover{
+  transform:scale(1.05);
+}
+.dark{
+  background:#1e1e2f;
+  color:white;
+}
+.gold{
+  background:#f5c542;
+  color:black;
+}
+.progress-bar{
+  width:100%;
+  background:#ddd;
+  border-radius:20px;
+  margin:15px 0;
+  height:25px;
+  overflow:hidden;
+}
+.progress{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#f5c542,#1e1e2f);
+  text-align:center;
+  color:black;
+  font-weight:bold;
+  transition:width 1s ease;
+  border-radius:20px;
+}
